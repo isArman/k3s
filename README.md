@@ -1,3 +1,27 @@
+
+خلاصه: 
+نصب اولیه:
+
+```
+curl -sfL https://files.anaiis.ir/files/k3s/install.sh | sh -s -
+```
+۱. دی‌ان‌اس‌های شکن روی هاست اعمال شود.
+۲. با این دستور رجستری به آروان تغییر کند:
+‍‍‍‍```
+mkdir -p /etc/rancher/k3s
+cat >> /etc/rancher/k3s/registries.yaml <<EOF
+mirrors:
+  docker.io:
+    endpoint:
+      - "https://docker.arvancloud.ir"
+EOF
+
+```
+۳. ری‌استرات سرویس:
+```
+systemctl restart k3s
+```
+
 K3s - Lightweight Kubernetes
 ===============================================
 [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B25850%2Fgithub.com%2Fk3s-io%2Fk3s.svg?type=shield)](https://app.fossa.com/projects/custom%2B25850%2Fgithub.com%2Fk3s-io%2Fk3s?ref=badge_shield)
