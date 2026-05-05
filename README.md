@@ -7,6 +7,7 @@ curl -sfL https://files.anaiis.ir/files/k3s/install.sh | sh -s -
 ```
 ۱. دی‌ان‌اس‌های شکن روی هاست اعمال شود.
 ۲. با این دستور رجستری به آروان تغییر کند:
+
 ‍‍‍‍```
 mkdir -p /etc/rancher/k3s
 cat >> /etc/rancher/k3s/registries.yaml <<EOF
@@ -17,7 +18,9 @@ mirrors:
 EOF
 
 ```
+
 ۳. ری‌استرات سرویس:
+
 ```
 systemctl restart k3s
 ```
