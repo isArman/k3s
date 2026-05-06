@@ -1,6 +1,9 @@
 تست شده روی:
+
+```bash
 Debian GNU/Linux 12, CPU Architecture: x86_64
 Ubuntu GNU/Linux 24.04, CPU Architecture: x86_64
+```
 ۱. اعمال DNS شکن روی هاست.
 
 ۲. نصب K3s با اسکریپت سفارشی:
